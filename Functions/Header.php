@@ -15,14 +15,14 @@ if (isset($message)) {
 
     <section class="flex">
 
-        <a href="home.php" class="logo">Shopie<span>.</span></a>
+        <a href="#" class="logo">Shopie<span>.</span></a>
 
         <nav class="navbar">
-            <a href="home.php">home</a>
-            <a href="about.php">about</a>
-            <a href="orders.php">orders</a>
-            <a href="shop.php">shop</a>
-            <a href="contact.php">contact</a>
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">orders</a>
+            <a href="#">shop</a>
+            <a href="#">contact</a>
         </nav>
 
         <div class="icons">
@@ -41,17 +41,17 @@ if (isset($message)) {
                 <p><?= $fetch_profile["name"]; ?></p>
                 <a href="update_user.php" class="btn">update profile</a>
                 <div class="flex-btn">
-                    <a href="user_register.php" class="option-btn">register</a>
-                    <a href="user_login.php" class="option-btn">login</a>
+                    <a href="/register.php" class="option-btn">register</a>
+                    <a href="/login.php" class="option-btn">login</a>
                 </div>
-                <a href="components/user_logout.php" class="delete-btn" onclick="return confirm('logout from the website?');">logout</a>
+                <a href="#" class="delete-btn" onclick="return confirm('logout from the website?');">logout</a>
             <?php
             } else {
             ?>
                 <p>please login or register first!</p>
                 <div class="flex-btn">
-                    <a href="user_register.php" class="option-btn">register</a>
-                    <a href="user_login.php" class="option-btn">login</a>
+                    <a href="/register.php" class="option-btn">register</a>
+                    <a href="/login.php" class="option-btn">login</a>
                 </div>
             <?php
             }
